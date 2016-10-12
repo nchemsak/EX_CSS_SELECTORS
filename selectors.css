@@ -1,0 +1,83 @@
+/* 1. The header element should have a 1px border. Color, you pick.*/
+header {
+	border: 1px solid tomato;
+}
+
+/* 2. Convert the ul in the navigation element into a series of horizontal links with # as the href value, without bullets, and have some space between them horizontally.*/
+header ul li {
+
+	list-style: none;
+	margin-right: 1em;
+	display: inline;
+}
+
+/* 4. Any text in an element with class "disabled" should be colored grey, 
+unless it is inside an anchor tag. 
+If inside an anchor, it should be colored purple.*/
+
+a span.disabled {
+	color:purple;
+}
+
+a.disabled {
+	color:purple;
+}
+
+.disabled {
+	color: grey;
+}
+
+/* 5. Any text inside an element with a class of "active" should be colored yellow.*/
+.active {
+	color: yellow;
+}
+/* 6. DONE Section elements should be contained within an article element.*/
+	
+/* 7. DONE There are two missing closing tags in this document. Make sure you add them back in.*/
+			        /*used HTML validator http://validator.w3.org/
+			        /*didn't have a closing tag for this <a href="#">*/
+			        /*was missing </h4> - <h4>I'm red's sister</h4>*/
+
+/* 8. Make the "I'm red" text colored red*/
+.parent div:nth-child(1) {
+	color: red;
+}
+
+/* 9. Make the "I'm blue" text colored blue*/
+.parent div:nth-child(3) {
+	color: blue;
+}
+
+/* 10. The sibling h4 of the red element should have a background color of red*/
+.parent h4:nth-child(2) {
+	display: inline-block;
+	background-color: red;
+}
+
+/* 11. The sibling h4 of the blue element should have background color of blue*/
+.parent > div > div ~ h4 {
+	display: inline-block;
+	background-color: blue;
+}
+
+/* 12. Any h4 that is a direct child of grandparent should have a 1px border with rounded corners.*/
+.grandparent > h4 {
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 5em;
+	padding: 1px;
+}
+
+/* 13. Elements with a class of promo should have bold text that is also colored gold.*/
+.promo {
+	font-weight: 700;
+	color: gold;
+}
+
+/* 14. Without adding any other attributes to the input fields in the footer, write a CSS selector that makes any text input field have a height of 25px*/
+input {
+	height: 25px;
+}
+
+
+
